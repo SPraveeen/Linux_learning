@@ -176,3 +176,16 @@
 - **sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"**
   - {Not much important/ to remove caches files like gb storage sometimes occupy}
 
+<h3><b>To check words<b></h3>
+
+- **wc file_name**
+  - {to check words/total characters}
+
+- **wc -w**
+  - {to check words}
+
+- **wc -l**
+  - {to check line}
+
+- **wc -c**
+  - {to check characters/letters}
