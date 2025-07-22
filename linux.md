@@ -80,6 +80,8 @@
 - **mkdir -p dire/direc/direc**
   - {-p used to create mulitple directories like abc/tst/demo}
 
+<h3><b>cd/ls</b></h3>
+
 - **cd ..**
   - {one directory coming out}
 
@@ -101,5 +103,76 @@
 - **source .bashrc**
   - {to execute that enviroment file}
 
+- **.bashrc or .profile or .bashrc_profile**
+   - {any one can like this many more}
 
+
+<h3><b>Hardlink/Softlink</b></h3>
+
+<h4><b>Hardlink</b></h4>
+
+- **ln file_name new_file**
+  - {creating hardlink like copy previous data to new file}
+  - {if removed rm original file/refrence file still new file there}
+
+<h4><b>Softlink</b></h4>
+
+- **ln -s old_file new_file**
+  - {only points file path and inside data if deletes original file/ref file new file also deleted}
+
+<h3><b>alias</b></h3>
+
+- **alias any_name="file_path"**
+  - {like if we need to enter to big/long path we can create one alias and give this path name}
+  - {it will only alive till close the terminal}
+  - {to make it throughout alive/permaanent copy this past and paste/create inside **.bashrc** and source it}
+
+<h3><b>nohup</b></h3>
+
+- **nohub python3 file_name >> new_file_name &**
+  - {press enter twice to run this}
+  - {Runs specific code or process in background even if system shutdowns/ like ex:code want to run for 4 years like that means not possible to sit for 4 years and monitor thats why we use nohup}
+
+- **top** or **ps** or **ps -aux** or **cat file_name** or **tail -f file_name**
+  - {tail to check data/code live}
+  - {cat previous printed file}
+  - {tail -10 file_name [last ten]}
+  - {ps -aux full file details}
+  - {to check nohup background code}
+
+- **kill -9 that_folder_number{check in ps}**
+  - {to force kill}
+
+- **ps -aux | grep file_name**
+  - {to get details of that specific file}
+
+- **wget "image_link/download_link"**
+  - {to download something to our linux system}
+
+- **df -h**
+  - {to check free_space in our disk}
+
+- **du -sh folder_name**
+ - {disk_usage summary human_readable/ to check space utilised for that particular directory/file}
+
+- **sudo apt-get install zip**
+  - {to install zip}
+
+- **zip -r new_file_name.zip our_folder_name**
+  - {to zip our exisiting folder}
+
+- **unzip that_file_name**
+  - {to unzip file}
+
+- **tar -czvf new_file_name.tar folder_name**
+  - {tar file create/remove, Compress, forceful, verbos_list, Following_list}
+
+- **tar -xzvf file_name**
+  - {to untar tar file x-expand, z-forceful}
+
+- **free -m or free -g**
+  - {to check ram -m{mb} -g{gb}}
+
+- **sudo sh -c "sync; echo 3 > /proc/sys/vm/drop_caches"**
+  - {Not much important/ to remove caches files like gb storage sometimes occupy}
 
