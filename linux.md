@@ -144,7 +144,7 @@
   - {to force kill}
 
 - **ps -aux | grep file_name**
-  - {to get details of that specific file}
+  - {to get details of that specific background running file}
 
 - **wget "image_link/download_link"**
   - {to download something to our linux system}
@@ -189,3 +189,15 @@
 
 - **wc -c**
   - {to check characters/letters}
+
+
+<h2><b>SSH{Secure Shell}/SCP{Secure Copy}</b></h2>
+
+<u>to connect other system via ssh</u>
+
+- **ssh username or IP Address**
+
+  - {For SSH [use Putty] / winSCP [for SCP]}
+
+- **scp /home/... user2 details**
+
