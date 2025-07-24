@@ -195,9 +195,50 @@
 
 <u>to connect other system via ssh</u>
 
+- **ifconfig**
+  - {to take ip address number}
+
+- **sudo apt-get install openssh-server**
+  - {to install pacakage}
+
+- **ssh ip_address or ssh username@hostname**
+  - {to connect to another computer}
+
 - **ssh username or IP Address**
 
   - {For SSH [use Putty] / winSCP [for SCP]}
 
 - **scp /home/... user2 details**
+
+<h3>Find</h3>
+
+- **find . -name file_name**
+
+- find . -name *.txt 
+
+- find . -mtime -1
+  - {one day time frame file}
+
+- find . -empty
+  - {empty files}
+
+- find . -name "*.tmp" -delete
+  - {delete tmp files}
+
+<h2><u>Check difference between grep and find</u><h2>
+
+<h3>awk</h3>
+
+- awk
+
+  - {like excel formulas for linux}
+
+  - {processing columns in text}
+  
+  - {performng calculations}
+
+  - {extracting and formatiing data from files}
+  
+
+
 
