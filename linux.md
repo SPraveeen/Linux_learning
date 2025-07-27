@@ -214,10 +214,16 @@
 
 - **find . -name file_name**
 
-- find . -name *.txt 
+- find . -name "*.txt"
+
+- find . -type f -size +10M
+  - {to find file greater than 10 Mb}
 
 - find . -mtime -1
   - {one day time frame file}
+
+- touch dummy
+  - {to create empty file}
 
 - find . -empty
   - {empty files}
@@ -227,7 +233,42 @@
 
 <h2><u>Check difference between grep and find</u><h2>
 
+<table>
+  <tr>
+    <th>Feature</th>
+    <th>'find'</th>
+    <th>'grep'</th>
+  </tr>
+  <tr>
+    <td>what it search</td>
+    <td>files and directories</td>
+    <td>Text inside files</td>
+  </tr>
+  <tr>
+    <td>Used For</td>
+    <td>Locatingg filles by name,size,type,etc.,</td>
+    <td>searching for matching lines/content</td>
+  </tr>
+    <tr>
+    <td>search level</td>
+    <td>works onn filesystem level</td>
+    <td>works on file content llevel</td>
+  </tr>
+    <tr>
+    <td>Example</td>
+    <td>find . -name "*.log"</td>
+    <td>grep "ERROR" log.txt</td>
+  </tr>
+</table>
+
 <h3>awk</h3>
+
+<h5>table</h5>
+<table>
+<tr><td>John</td><td>25</td><td>Dev</td></tr>
+<tr><td>Mugan</td><td>27</td><td>Designer</td></tr>
+<tr><td>Jagam</td><td>30</td><td>finance</td></tr>
+</table>
 
 - awk
 
@@ -235,10 +276,25 @@
 
   - {processing columns in text}
   
-  - {performng calculations}
+  - {performing calculations}
 
   - {extracting and formatiing data from files}
-  
 
+- awk '{print}' file_name
 
+- awk '{print $1}' file_name
+
+- awk '{print $1 $3}' file_name
+
+- awk '$2 > 27 {print $1,$3}' file_name
+  - {age > 27}
+
+- awk '{printf "Name: %s| Age: %s | Role: %s\n", $1, $2, $3}' file_name
+  - {o/p formatted}
+
+<h4>Mode</h4>
+<a href="E:\Linux_learning\image.png">Mode_ref</a>
+d r w x r - x r - x
+
+- rw- rw- r--
 
