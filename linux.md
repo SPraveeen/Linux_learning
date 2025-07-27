@@ -293,8 +293,36 @@
   - {o/p formatted}
 
 <h4>Mode</h4>
+
+- {user/group/other}
+- read 'r'/write 'w'/execute 'x' => 4/2/1
+
 <a href="E:\Linux_learning\image.png">Mode_ref</a>
-d r w x r - x r - x
+
+- d r w x r - x r - x
 
 - rw- rw- r--
+
+- chmode {that number} file_name
+  - {change_mode}
+
+<h4>Scheduling / 1.cron {mac/linux supports} / Airflow / even while you can use</h4>
+
+- crontab -e
+  - {formula */2 * * * * ...}
+  - crtl+x
+  - y
+  - 'enter'
+  - <a href="crontab.guru">crontab_guru</a>
+
+- which python3
+  - {it shows location}
+
+- to stop put # for that command inside crontab -e
+
+- 
+
+
+
+
 
