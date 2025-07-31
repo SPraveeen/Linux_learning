@@ -320,7 +320,66 @@
 
 - to stop put # for that command inside crontab -e
 
-- 
+<title>Apache_airflow</title>
+
+- 1. wsl --install
+- 2. sudo apt update
+- 3. sudo apt install python3 python3-pip
+- 4. sudo pip install virtualenv
+- 5. mkdir airflow_project
+- 6. cd airflow_project
+- 7. virtualenv airflow_venv
+- 8. source airflow_venv/bin/activate
+- 9. install apache airflow with constratints
+- 10. initialize the database
+ - set the airflow home directory:
+ - export AIRFLOW_HOME=~/airflow
+ - airflow db init
+- 11. start airflow
+ - airflow webserver --port 8085
+ - source ~/airflow_project/airflow_venv/bin/activate
+ - airflow scheduler
+ - accessing airflow
+ - localhost:8085
+- 12. Additional Steps
+- setup airflow user(optional):
+ - username admin\
+ - first_name\
+ - password
+
+- MYSQL-> python ->ETL python -> scheduling in Airflow -> Every five minutes run scheduling
+
+<h3>shell Scripting/wrapper script</h3>
+<h5>Example 1</h5>
+
+- shell script create
+- vi test.sh
+- #!/bin/bash
+- echo "hello world"
+- shft+: wq
+- sh test.sh
+<h5>Example 2</h5>
+
+- vi name.sh
+- #!/bin/bash
+- name = "Gowtham"
+- echo "Hello, $name!"
+- shft+: wq
+- sh test.sh
+<h5>Example 3</h5>
+
+- vi read1.sh
+- #!/bin/bash
+- echo "Enter your name:"
+- read username
+- echo "Welcome, $username!"
+- shft+: wq
+- sh read1.sh
+
+
+
+
+
 
 
 
